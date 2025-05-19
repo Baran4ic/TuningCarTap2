@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgGarage"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/b_garage"
+        android:onClick="tapGarage"/>
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMyCars"
+        app:srcCompat="@drawable/b_settings"
+        android:onClick="tapSettings"/>
+
+    <ImageView
+        android:id="@+id/imgOrders"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgMyCars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGarage"
+        app:srcCompat="@drawable/b_orders" />
+
+    <ImageView
+        android:id="@+id/imgMyCars"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:onClick="tapCar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGarage"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/b_mycars" />
+
+    <ImageView
+        android:id="@+id/imgName"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgGarage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_name" />
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="tapVolume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/volume_off" />
+</androidx.constraintlayout.widget.ConstraintLayout>

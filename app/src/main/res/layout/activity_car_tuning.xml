@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context=".CarTuning">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="286dp"
+        android:layout_height="126dp"
+        android:text="Проехать 10 км\n(Потапай тачку)"
+        android:textAlignment="center"
+        android:textColor="#dddddd"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="257dp"
+        android:layout_height="114dp"
+        android:text="Пробег: 0 км"
+        android:textAlignment="center"
+        android:textColor="#dddddd"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+
+    <ImageView
+        android:id="@+id/imageBucket"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:onClick="tapBacket"
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/backet" />
+
+    <ImageView
+        android:id="@+id/imageWheel"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:onClick="tapWheel"
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toStartOf="@+id/imageLivr"
+        app:layout_constraintStart_toEndOf="@+id/imageBucket"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/wheel" />
+
+    <ImageView
+        android:id="@+id/imageWindow"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:onClick="tapWindow"
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toStartOf="@+id/imageBucket"
+        app:layout_constraintStart_toEndOf="@+id/imageFars"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/window" />
+
+    <ImageView
+        android:id="@+id/imageFars"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:onClick="tapFars"
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toStartOf="@+id/imageBucket"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/fars" />
+
+    <ImageView
+        android:id="@+id/imageLivr"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:onClick="tapLivr"
+        app:layout_constraintBottom_toTopOf="@+id/imgCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toEndOf="@+id/imageBucket"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/livr" />
+
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/fon" />
+
+    <ImageView
+        android:id="@+id/imgWheels"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/wheels_skyline" />
+
+    <ImageView
+        android:id="@+id/imgFars"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/fars_skyline" />
+
+    <ImageView
+        android:id="@+id/imgKorpus"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/korpus_skyline" />
+
+    <ImageView
+        android:id="@+id/imgWindow"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        android:onClick="tapCar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/window_skyline" />
+
+    <ImageView
+        android:id="@+id/imgLivr"
+        android:layout_width="316dp"
+        android:layout_height="242dp"
+        android:onClick="tapCar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.355"
+        app:srcCompat="@drawable/livr_skyline" />
+</androidx.constraintlayout.widget.ConstraintLayout>
